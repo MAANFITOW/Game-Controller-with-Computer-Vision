@@ -15,8 +15,8 @@ ap.add_argument("-v", "--video",
 	help="path to the (optional) video file")
 args = vars(ap.parse_args())
 # valores permitidos para nuestro objeto en HSV
-yellowLower = (10, 100, 110)
-yellowUpper = (90, 255, 255)
+yellowLower = (12, 120, 110)
+yellowUpper = (37, 255, 255)
 # if a video path was not supplied, grab the reference
 # to the webcam
 if not args.get("video", False):
